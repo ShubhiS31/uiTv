@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.inmobi.ads"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        />
+
+    <com.appnext.banners.BannerView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:bannerSize="BANNER"
+        ads:placementId="ce27d79a-daaa-418a-9a35-18f1c3941436"/>
+
+</RelativeLayout>
